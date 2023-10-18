@@ -84,8 +84,7 @@ public class RestTest {
                 .assertThat().contentType(ContentType.JSON)
                 .extract().body().jsonPath().getList("$", UserData.class);
         UserData userWithId5 = users.stream().filter(x -> x.getId().equals(5)).findFirst().orElse(null);
-        String actualUserWithId5 = gson.toJson(userWithId5);
-        Assert.assertEquals(actualUserWithId5, getExpectedUser5());
+        Assert.assertEquals(gson.toJson(userWithId5), getExpectedUser5());
     }
 
     @Test
