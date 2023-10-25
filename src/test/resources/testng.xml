@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite for pojo test">
-    <test name="pojo test">
+<suite name="Suite for jsonplaceholder.pojo test">
+    <test name="jsonplaceholder.pojo test">
         <classes>
-            <class name="requestsTest.RestTest"/>
+            <class name="jsonplaceholder.requestsTest.PostsTest"/>
+            <class name="jsonplaceholder.requestsTest.UsersTest"/>
         </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package commonLogic;
+package framework;
 
 import java.io.IOException;
 
